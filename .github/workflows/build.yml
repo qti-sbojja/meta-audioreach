@@ -40,7 +40,7 @@ jobs:
 
       # Use build command from matrix
       - name: Build for ${{ matrix.build_matrix.machine_name }}
-        uses: Audioreach/meta-audioreach/.github/actions/build@master
+        uses: ./.github/actions/build
         with:
           docker_image: ${{ steps.get-docker-image.outputs.image_name }}
           kas_file: ${{ matrix.build_matrix.kas_file }}
