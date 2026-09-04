@@ -14,6 +14,7 @@ RDEPENDS:${PN} = " \
     audioreach-conf \
     audioreach-graphmgr \
     audioreach-graphservices \
+    mm-audio-headers \
     tinyalsa \
 "
 RDEPENDS:${PN}:append:raspberrypi4 = " \
@@ -22,6 +23,7 @@ RDEPENDS:${PN}:append:raspberrypi4 = " \
 RDEPENDS:${PN}:append:qcom = " \
     audioreach-audio-utils \
     audioreach-pal-headers \
+    audioreach-pal-vui-intf-headers \
     audioreach-pal \
     audioreach-pipewire-plugin \
     audioreach-kernel-headers \
